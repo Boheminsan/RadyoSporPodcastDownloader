@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\aktas\Documents\repos\RdSpPodcast\RdSpPodcast\bin\Debug\RdSpPodcast.exe">
+   <Modules>
+    <Module Name="rdsppodcast.exe">
+     <Namespaces>
+      <Namespace Name="RdSpPodcast.Properties">
+       <Types>
+        <Type Name="Resources" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="ExcludedInSource" Created="2019-08-02 21:24:24Z" FixCategory="NonBreaking" LastSeen="0001-01-01 00:00:00Z" />
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Çağırılmayan özel kodlardan kaçının</Name>
+   <Description>Dışarıdan görünür olmayan ve bilinen bir çalışma zamanı giriş noktası olmayan çağırılmamış kod mevcut. Eğer bu ihlal hatalı olarak gösteriliyorsa, lütfen Visual Studio Kod Analizi ekibine bu problemi raporlayın.</Description>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategori</String>
+  <String Key="Certainty">Kesinlik</String>
+  <String Key="CollapseAll">Tümünü Daralt</String>
+  <String Key="CheckId">Kimliği Denetle</String>
+  <String Key="Error">Hata</String>
+  <String Key="Errors">hata(lar)</String>
+  <String Key="ExpandAll">Tümünü Genişlet</String>
+  <String Key="Help">Yardım</String>
+  <String Key="Line">Çizgi</String>
+  <String Key="Messages">ileti(ler)</String>
+  <String Key="LocationNotStoredInPdb">[Konum Pdb içinde saklanmıyorl]</String>
+  <String Key="Project">Proje</String>
+  <String Key="Resolution">Çözünürlük</String>
+  <String Key="Rule">Kural</String>
+  <String Key="RuleFile">Kural Dosyası</String>
+  <String Key="RuleDescription">Kural Açıklaması</String>
+  <String Key="Source">Kaynak</String>
+  <String Key="Status">Durum</String>
+  <String Key="Target">Hedef</String>
+  <String Key="Warning">Uyarı</String>
+  <String Key="Warnings">uyarı(lar)</String>
+  <String Key="ReportTitle">Kod Analizi Raporu</String>
+ </Localized>
+</FxCopReport>
